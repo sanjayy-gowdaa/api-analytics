@@ -1,0 +1,5 @@
+api_name,total_requests,successful_requests,conversion_rate
+FACE_MATCH,267,225,84.27
+KYC_VERIFY,236,192,81.36
+OCR_AADHAAR,232,200,86.21
+OCR_PAN,265,230,86.79
