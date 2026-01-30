@@ -53,6 +53,18 @@ Leverage Gemini AI for intelligent product recommendations:
 
 ![AI Insights](pics/ai_insight.png)
 
+### 5. **Custom CSV Upload**
+Upload and analyze your own API logs directly in the dashboard:
+- Drag-and-drop CSV file upload
+- Real-time metrics calculation
+- No need to run Python scripts manually
+- Instant visualization of your data
+- Perfect for ad-hoc analysis and presentations
+- Concrete technical and product improvement suggestions
+- Tailored recommendations for each API
+
+![AI Insights](pics/ai_insight.png)
+
 ---
 
 ## 📁 Project Structure
@@ -231,6 +243,28 @@ streamlit run app.py
 
 The dashboard will open in your browser at `http://localhost:8501`
 
+**Dashboard Options:**
+
+1. **Use Pre-calculated Metrics** (Default)
+   - Loads metrics from files generated in Step 1
+   - Fast loading and consistent results
+
+2. **Upload Raw Logs & Calculate** (Custom Analysis)
+   - Upload your own CSV file directly in the dashboard
+   - Metrics are calculated in real-time
+   - No need to run Python scripts
+   - Perfect for analyzing different datasets on-the-fly
+
+**To upload a custom CSV:**
+1. In the sidebar, select "Upload Raw Logs & Calculate"
+2. Click "Browse files" and select your CSV
+3. Dashboard automatically processes and displays metrics
+
+**Required CSV format:**
+```csv
+request_id,api_name,TIMESTAMP,latency_ms,status_Code,error_reason,region,document_type,device_type
+```
+
 ### Step 3: Generate AI Insights
 
 1. Select an API from the dropdown menu
@@ -315,15 +349,22 @@ The AI-powered insights module provides:
 - Identify friction points in user journeys
 - A/B test API improvements impact
 
-### 3. **Product Roadmap Planning**
+### 3. **Ad-Hoc Analysis with Custom Data**
+- Upload different CSV files for comparative analysis
+- Test hypothetical scenarios with modified data
+- Quick analysis during meetings or presentations
+- Validate data quality before production deployment
+
+### 4. **Product Roadmap Planning**
 - Use AI recommendations for feature prioritization
 - Data-driven decision making for technical debt
 - Resource allocation based on impact analysis
 
-### 4. **Stakeholder Communication**
+### 5. **Stakeholder Communication**
 - Visual dashboards for executive presentations
 - Clear metrics for engineering team alignment
 - ROI justification for infrastructure investments
+- Real-time data demos with custom CSV uploads
 
 ---
 
